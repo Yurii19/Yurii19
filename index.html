@@ -22,8 +22,27 @@
       font-size: 1.2em;
       padding-right: 30px;
     }
+
     .user-pic {
       border-radius: 4px;
+      float: right;
+    }
+
+    .contact {
+      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+    }
+    .example {
+      display: inline-block;
+      margin-top: 10px;
+      
+    }
+
+    .gh-link {
+      color: #FFC312;
+      /* text-decoration: none; */
+      font-weight: 600;
     }
   </style>
 </head>
@@ -31,19 +50,28 @@
 <body>
   <main class="main">
     <div class="user">
+      <img class="user-pic" src="img/1.jpg" alt="user_photo" height="100">
       <h1>Yurii Kolechkin</h1>
       <div class="description">
         Front-end developer. Passed the training course "Computer science based on Stanford CS50". Now student of
-        "Frontend Web Dev" in Sh++.
+        "Frontend Web Dev" in <a href="https://programming.kr.ua/ua" target="blank"> Ш++</a>.
+      </div>
+      <span class="example">My works :  <a  class="gh-link" href="https://yurii19.github.io/UI-library/" target="blank">
+        Simple UI library</a>
+        ,
+        <a  class="gh-link" href="https://codepen.io/yurko09/pen/gOYGLJx" target="blank">
+          Game Of Life</a>
+      </span>
+      <div class="contact">
+        <span>Contacts me: </span>
+        <span>Email:<em> <a href="mailto:Yurkomits@gmail.com" >Yurkomits@gmail.com</a></em></span>
+        <span>Phone:<em> <a href="tel:+380 67 255 88 87">+380 67 255 88 87</a></em></span>
+        <span>Telegram:<em> <a href="https://telegram.me/yuriispp" target="blank">@yuriispp</a></em></span>
       </div>
     </div>
-
     <div class="img-container">
-      <img class="user-pic" src="img/1.jpg" alt="user_photo" height="100">
     </div>
   </main>
-
-
 </body>
 
 </html>
