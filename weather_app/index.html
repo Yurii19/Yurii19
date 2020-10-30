@@ -38,15 +38,18 @@
     </div>
 
     <div class="main-container">
-      <h3>Weather in Opole, Poland</h3>
-      <section class="main-content">Press the button to get data : 
-        <button class="control" id="gh">Get data</button>
-        <button class="control" id="weather">Get weather</button>
-        <!-- <label id="label_of_city">City
-          <input type="text" pattern="">
-          <span class="error">Input a real city mame</span>
-        </label> -->
+      <h3>Weather in defined city</h3>
+      <section class="main-content">Input city name and press the button 
         
+        <button class="control" id="gh">Get data</button>
+        
+        <!-- <button class="control" id="weather">Get weather</button> -->
+        <button class="control" id="weatherByName" >Get weather</button>
+        <label id="label_of_city">
+          <input type="text" pattern="" id="city_name" placeholder="city name">
+          <span class="error" id="city_input_error">Input a real city mame</span>
+        </label>
+        <h4 id="main_header"></h4>
         <div class="content" id="resp"></div>
       </section>
     </div>

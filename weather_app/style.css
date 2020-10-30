@@ -135,6 +135,9 @@ body{
     top:20px; */
     width: 100px;
   }
+  #city_input_error {
+    display: none;
+  }
   #gh { display: none;}
   @media(max-width: 500px){
     /* body{
