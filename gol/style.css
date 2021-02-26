@@ -12,7 +12,7 @@ h2 * {
 .game {
 	display: flex;
 	justify-content: space-around;
-	width: 900px;
+	width: 70%;
 	border-radius: 20px;
 	margin: 0 auto;
 	background-color: #01a3a4;
@@ -65,7 +65,7 @@ h2 * {
 @media(max-width: 700px){
 	.game {
 		flex-direction: column;
-		/* width: 100%; */
+		width: 100%;
 	}
 	.controls {
 		display: flex;
