@@ -21,6 +21,9 @@ function stop(){
 }
 
 function indicate(){
+	if(!GameStatus) {
+		alert('asdf');
+	}
 	const indicator = document.getElementById('lamp');
 	let mySwitch = true ;
 	setInterval(function(){
@@ -40,6 +43,9 @@ function indicate(){
 }
 
 function gameLife() {
+	if(GameStatus) {
+		return;
+	}
 	canvas = document.getElementById("scene");
 	ctx = canvas.getContext("2d");  
 	GameStatus = true;
