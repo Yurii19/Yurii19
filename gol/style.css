@@ -44,6 +44,8 @@ h2 * {
 	border-style: none;
 	padding: 15px;
 	display: block;
+	cursor: pointer;
+	width: 100%;
 }
 .button:active {
 	background-color: #C4E538;
@@ -64,10 +66,11 @@ h2 * {
 	background-color: #f9ca24;
 	box-shadow: 0 0 10px  #f9ca24;
 }
-@media(max-width: 700px){
+@media(max-width: 600px){
 	.game {
 		flex-direction: column;
 		width: 100%;
+		padding: 0;
 	}
 	.controls {
 		display: flex;
@@ -76,4 +79,7 @@ h2 * {
 	#scene {
 		width: 100%;
 	}
-}
+.button {
+	width: 25%;
+  }
+}	
